@@ -71,6 +71,7 @@ fn part1() {
     }
     println!("{}", n_lit);
 
+    // part 2
     let mut s = String::from("");
     for i in 0..height {
         for j in 0..width {

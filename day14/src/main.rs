@@ -1,4 +1,5 @@
 fn main() {
+    part1();
     part2();
 }
 
@@ -72,7 +73,6 @@ fn part1() {
                     let new_digest = md5::compute(salt.to_owned() + &(m+index).to_string());
                     let t = format!("{:x}", new_digest);
                     if t.contains(&r) {
-                        println!("{}", index);
                         keys += 1;
                         break;
                     }
